@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "511368377297",
+    "project_id": "shopping-5517b",
+    "storage_bucket": "shopping-5517b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:511368377297:android:e9ac2a3dd40d6fa72c26f0",
+        "android_client_info": {
+          "package_name": "edu.tecsup.shopping"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "511368377297-mgr7khno6g0s6uor2nm6vnfsmuh69lbl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD97UnBYm98iS251NdBhI4ulJ-YYYMYrvU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "511368377297-mgr7khno6g0s6uor2nm6vnfsmuh69lbl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
