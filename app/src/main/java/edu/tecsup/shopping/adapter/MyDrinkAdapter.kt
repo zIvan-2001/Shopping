@@ -28,7 +28,7 @@ class MyDrinkAdapter(
 ):RecyclerView.Adapter<MyDrinkAdapter.MyDrinkViewHolder>() {
     class MyDrinkViewHolder(itemView:View) : RecyclerView.ViewHolder(itemView),
         View.OnClickListener {
-        var imgaView:ImageView?=null
+        var imageView:ImageView?=null
         var txtName:TextView?=null
         var txtPrice:TextView?=null
 
@@ -40,7 +40,7 @@ class MyDrinkAdapter(
         }
 
         init {
-                imgaView = itemView.findViewById(R.id.imageView) as ImageView;
+                imageView = itemView.findViewById(R.id.imageView) as ImageView;
                 txtName = itemView.findViewById(R.id.txtName) as TextView;
                 txtPrice = itemView.findViewById(R.id.txtPrice) as TextView;
 
@@ -60,7 +60,7 @@ class MyDrinkAdapter(
     override fun onBindViewHolder(holder: MyDrinkViewHolder, position: Int) {
           Glide.with(context)
               .load(list[position].image)
-              .into(holder.imgaView!!)
+              .into(holder.imageView!!)
         holder.txtName!!.text = StringBuilder().append(list[position].name)
         holder.txtPrice!!.text = StringBuilder("$").append(list[position].price)
 

@@ -8,6 +8,4 @@ class CartModel {
     var quantity=0
     var totalPrice=0f
 
-
-
 }

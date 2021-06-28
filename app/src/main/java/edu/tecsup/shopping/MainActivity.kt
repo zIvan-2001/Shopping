@@ -1,5 +1,6 @@
 package edu.tecsup.shopping
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.GridLayout
@@ -39,7 +40,7 @@ class MainActivity : AppCompatActivity(), IDrinkLoadListener,ICartLoadListener {
     }
 
     @Subscribe(threadMode = ThreadMode.MAIN,sticky = true)
-    public fun onUpdateCartEvent(event:UpdateCartEvent)
+     fun onUpdateCartEvent(event:UpdateCartEvent)
     {
         countCartFromFirebase()
     }
@@ -113,6 +114,8 @@ class MainActivity : AppCompatActivity(), IDrinkLoadListener,ICartLoadListener {
         val gridLayoutManager = GridLayoutManager(this,2)
         recycler_drink.layoutManager = gridLayoutManager
         recycler_drink.addItemDecoration( SpaceItemDecoration())
+
+        btnCart.setOnClickListener{  startActivity(Intent(this, CartActivity::class.java))}
     }
 
     override fun onDrinkLoadSuccess(drinkModelList: List<DrinkModel>?) {
