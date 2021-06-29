@@ -10,7 +10,7 @@
 
      <LinearLayout
          android:id="@+id/panel"
-         android:background="#E7E7E7"
+         android:background="#e78d2c"
          android:orientation="horizontal"
          android:weightSum="16"
          android:layout_width="match_parent"
@@ -26,7 +26,7 @@
 
          <TextView
              android:id="@+id/txtTotal"
-             android:text="CART"
+             android:text="TU CARRITO"
              android:layout_gravity="center_vertical"
              android:textSize="30sp"
              android:textStyle="bold"

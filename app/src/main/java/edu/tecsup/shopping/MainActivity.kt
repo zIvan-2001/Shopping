@@ -137,3 +137,22 @@ class MainActivity : AppCompatActivity(), IDrinkLoadListener,ICartLoadListener {
         Snackbar.make(mainLayout,message!!,Snackbar.LENGTH_LONG).show()
     }
 }
+
+//        user = FirebaseAuth.getInstance()
+//
+//        if (user.currentUser !=null) {
+//            user.currentUser?.let {
+//                binding.textView2.text = it.email
+//            }
+//        }
+//
+//        binding.btnSignUp.setOnClickListener{
+//            user.signOut()
+//            startActivity(
+//                Intent(
+//                    this,
+//                    MainActivity::class.java
+//                )
+//            )
+//            finish()
+//        }

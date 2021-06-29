@@ -81,7 +81,7 @@ class CartActivity : AppCompatActivity(), ICartLoadListener {
     }
 
     override fun onLoadCartSuccess(cartModelList: List<CartModel>) {
-        var sum = 0.0
+        var sum = 0.00
         for(cartModel in cartModelList!!){
             sum+= cartModel!!.totalPrice
         }

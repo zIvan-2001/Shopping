@@ -77,13 +77,14 @@
 
                 <TextView
                     android:id="@+id/txtPrice"
-                    android:text="$1"
-                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
-                    android:textSize="20sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@color/black"
+                    android:text="$1"
+                    android:textSize="20sp" />
 
             </RelativeLayout>
 
